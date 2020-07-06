@@ -48,7 +48,7 @@
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
     }
-    /* input[type=text], select, textarea {
+    input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -77,55 +77,32 @@ input[type=submit]:hover {
 }
 
 /* Create two columns that float next to eachother */
-/* .column {
+.column {
   float: left;
   width: 50%;
   margin-top: 6px;
   padding: 20px;
-} */
+}
 
 /* Clear floats after the columns */
-/* .row:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
-} */
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
-  } */
-
-  .form-control{
-    width: 600px;
-    background: transparent;
-  border-bottom: 1px solid gray;
-  margin-bottom: 16px;
-  font-size: 18px;
-  }
-  input{
-    height: 45px;
-
-  }
-  form .submit{
-    font-size: 20px;
-    background: #fff5722;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
-  }
-  form .submit:hover{
-    background-color: #f44336;
-    cursor: pointer;
   }
 }
     </style>
   </head>
   <body>
 <header>
+  <img id="logos" src="logo.jpg" alt=""><br>
   <h1>WINE GENIE</h1><br><br><br>
 </header><br>
 <div id="mySidenav" class="sidenav">
@@ -153,16 +130,24 @@ function closeNav() {
     <h2>Contact Us</h2>
     <p>Leave us a feedback:</p>
   </div>
-  <div class="contact-form">
-    <form id="contact-form" action="contactfromhandler.php" method="post">
-      <input type="text" name="name" placeholder="Write Your Name Here"class="form-control" required>
-      <br>
-      <input type="email" name="email" placeholder="Write Your Email Address Here"class="form-control" required>
-      <br>
-      <textarea name="message" rows="8" cols="80" class="form-control" placeholder="Write Your Message..." required></textarea>
-      <br>
-      <input type="submit" name="" value="SEND MESSAGE" class="form-control submit" >
-    </form>
+  <div class="row">
+    <div class="column">
+      <img  id="feedback"src="logo.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email Address</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your emaiil address">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 </div>
 </main>
