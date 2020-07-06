@@ -154,7 +154,7 @@ function closeNav() {
     <p>Leave us a feedback:</p>
   </div>
   <div class="contact-form">
-    <form id="contact-form" action="contactformhandler.php" method="post">
+    <form id="contact-form" action="contact_handler.php" method="post">
       <input type="text" name="name" placeholder="Write Your Name Here"class="form-control" required>
       <br>
       <input type="email" name="email" placeholder="Write Your Email Address Here"class="form-control" required>
@@ -162,6 +162,7 @@ function closeNav() {
       <textarea name="message" rows="8" cols="80" class="form-control" placeholder="Write Your Message..." required></textarea>
       <br>
       <input type="submit" name="" value="SEND MESSAGE" class="form-control submit" >
+<h5><?=$result;?></h5>
     </form>
   </div>
 </div>
