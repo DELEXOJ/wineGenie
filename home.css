@@ -7,9 +7,36 @@ body,html{
 }
 
 header{
-  text-align: center;
+  /* text-align: center;
   background-color: red;
   color: black;
+  line-height: 2; */
+  position: relative;
+ top: 18px;
+ left: 10px;
+ background-color: red
+
+}
+#feedback{
+
+  float: center;
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin-left: 19em;
+  margin-right: auto;
+}
+#logos{
+  /* float: left;
+  width:10%;
+  display: block;
+  margin-left: 19em;
+  margin-right: auto; */
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #pict{
   display: block;
@@ -113,5 +140,5 @@ main{
 footer{
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: red;
 }

@@ -48,12 +48,25 @@
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
     }
+    .bgimg{
+      background-image: url(winess.jpg);
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+        /* Set the font-size to 25 pixels */
+        font-size: 25px;
+          text-align: center;
+    }
     </style>
   </head>
   <body>
 <header>
-  <h1>WINE GENIE</h1>
-</header>
+  <img id="logos" src="logo.jpg" alt=""><br>
+  <h1>WINE GENIE</h1><br><br><br>
+</header><br>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
@@ -74,12 +87,17 @@ function closeNav() {
 }
 </script>
 <main>
+  <div class="bgimg">
+    <div class="topleft">
+      <h1>COMING SOON</h1>
+    </div>
+  </div>
 </main>
 <footer>
   <p>WINE GENIE</p>
 
 <p>Wine Genie Copyright - All right reserved</p>
-<a href="#">Contact Us</a>
+<a href="contact.html">Contact Us</a>
 
 </footer>
   </body>
